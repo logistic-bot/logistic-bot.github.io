@@ -1,0 +1,26 @@
+#+TITLE: Random stuff & notes -- logistic-bot
+#+EMAIL: logistic-bot@protonmail.com
+#+LANGUAGE: english
+
+
+On this website, I write stuff. These are mostly unorganized notes.
+* Writing setup in Emacs org-mode with pandoc
+I have a file ~index.org~[fn:1] which contains the whole website. A Makefile is then used to convert the org file into html using ~pandoc~. A ~pandoc.css~ file is also included.
+
+I would like for there to be a way to dynamically change the code snippet below whenever the Makefile changes, but as far as I know, this is not possible with code highlighting.
+
+*Makefile:*
+#+BEGIN_SRC makefile
+index.html: index.org pandoc.css Makefile gruvbox.theme
+	pandoc -o index.html index.org --toc -H pandoc.css -s --highlight-style gruvbox.theme
+
+gruvbox.theme: gruvbox.json
+	cp gruvbox.json gruvbox.theme
+
+clean:
+	rm -f index.html gruvbox.theme
+#+END_SRC
+
+You may notice that I am using a custom highlight style (~--highlight-style gruvbox.theme~).
+
+[fn:1] This is the file I'm editing right now.

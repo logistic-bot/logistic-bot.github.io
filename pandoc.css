@@ -1,0 +1,47 @@
+<style type="text/css">
+nav {
+    background-color: #f9f5d7;
+    font-family: 'Victor Mono', Menlo, Monaco, 'Lucida Console', Consolas, Monospace;
+}
+a {
+    color: #458588;
+}
+a:hover {
+    color: #076678;
+    font-weight: 500;
+}
+.footnote-ref {
+    color: #b16286;
+}
+.footnote-ref:hover {
+    color: #8f3f71;
+    font-weight: 500;
+}
+.footnote-back {
+    color: #b16286;
+}
+.footnote-back:hover {
+    color: #8f3f71;
+    font-weight: 500;
+}
+body {
+    font-size: 80%;
+    margin: auto;
+    padding-right: 1em;
+    padding-left: 1em;
+    max-width: 45em;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    font-family: Bodoni, Verdana, sans-serif;
+    background-color: #fbf1c7;
+    color: #3c3836;
+    height: 100vh;
+}
+href {
+    font-family: 'Victor Mono', Menlo, Monaco, 'Lucida Console', Consolas, Monospace;
+}
+.sourceCode {
+    padding-left: .2em;
+    font-family: 'Victor Mono', Menlo, Monaco, 'Lucida Console', Consolas, Monospace;
+}
+</style>
